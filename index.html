@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <legend fetchpriority="high" rel="preload" href="./assets/images/slider/ryoji-iwata-mobile.webp" as="image" media="(max-width:650px)">
+    <link fetchpriority="high" rel="preload" href="./assets/images/slider/ryoji-iwata-tablet.webp" as="image" media="(max-width:651px) and (max-width: 1000px)">
+    <link fetchpriority="high" rel="preload" href="./assets/images/slider/ryoji-iwata-desktop.webp" as="image" media="(min-width:1000px)">
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,7 +67,7 @@
           <div class="carousel-item active">
             <picture>
               <source type="image/webp" srcset="./assets/images/slider/ryoji-iwata-mobile.webp 650w,
-              ./assets/images/slider/ryoji-iwata-mobile.webp 1000w">
+              ./assets/images/slider/ryoji-iwata-tablet.webp 1000w">
               <img
               fetchpriority="high"
               src="./assets/images/slider/ryoji-iwata-desktop.webp"
