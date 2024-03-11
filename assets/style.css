@@ -318,6 +318,9 @@ input[type="submit"] {
   }
 }
 
+#img-mobile {
+  display: none;
+}
 @media all and (max-width: 650px) {
   .top-header {
     flex-direction: column;
@@ -353,5 +356,12 @@ input[type="submit"] {
   }
   .picture {
     width: 80%;
+  }
+  #img-mobile {
+    display: block;
+  }
+
+  #img-desktop {
+    display: none;
   }
 }
