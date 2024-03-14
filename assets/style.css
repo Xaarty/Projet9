@@ -357,11 +357,5 @@ input[type="submit"] {
   .picture {
     width: 80%;
   }
-  #img-mobile {
-    display: block;
-  }
-
-  #img-desktop {
-    display: none;
-  }
+ 
 }
