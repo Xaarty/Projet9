@@ -4,9 +4,6 @@
     <title>Nina Carducci</title>
     <meta name="description" content="photographe professionnelle">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link fetchpriority="high" rel="preload" href="./assets/images/slider/ryoji-iwata-mobile.webp" as="image" media="(max-width:650px)">
-    <link fetchpriority="high" rel="preload" href="./assets/images/slider/ryoji-iwata-tablet.webp" as="image" media="(max-width:651px) and (max-width: 1000px)">
-    <link fetchpriority="high" rel="preload" href="./assets/images/slider/ryoji-iwata-desktop.webp" as="image" media="(min-width:1000px)">
     <link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="./assets/bootstrap/bootstrap.min.css" href="styles.css"></noscript>
     <link rel="preload" href="./assets/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -71,16 +68,15 @@
           <div class="carousel-inner" id="carousel-inner-mediaqueries">
             <div class="carousel-item active">
               <picture>
-                <source type="image/webp" srcset="./assets/images/slider/ryoji-iwata-mobile.webp 650w,
-                ./assets/images/slider/ryoji-iwata-tablet.webp 1000w">
+                <source type="image/webp" media="(min-width: 650px)" srcset="./assets/images/slider/ryoji-iwata-mobile.webp">
+                <source type="image/webp" media="(min-width: 1000px)" srcset="./assets/images/slider/ryoji-iwata-tablet.webp"> 
+               
                 <img
-                fetchpriority="high"
                 src="./assets/images/slider/ryoji-iwata-desktop.webp"
                 class="d-block w-100"
                 alt="ryoji iwata"
                 loading="eager"
-                width="1440"
-                height="300"
+
                 />
               </picture>
             </div>
