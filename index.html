@@ -21,7 +21,7 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "photographe",
+        "@type": "LocalBusiness",
         "image": [
           "./assets/images/nina-small.webp"
          ],
@@ -73,16 +73,11 @@
       }
     </script>
 
-    <link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="./assets/bootstrap/bootstrap.min.css" href="styles.css"></noscript>
-    <link rel="preload" href="./assets/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="./assets/style.min.css" href="styles.css"></noscript>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="preload" href="./assets/style.min.css" as="style" />
+    <link rel="stylesheet" href="./assets/style.min.css">
+    
     <meta charset="UTF-8" />
   </head>
   <body>
@@ -99,7 +94,7 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt="instagram" loading="lazy"
+              ><img src="assets/images/instagram.png" alt="instagram" loading="eager"
             /></a>
           </li>
         </ul>
@@ -137,8 +132,8 @@
           <div class="carousel-inner" id="carousel-inner-mediaqueries">
             <div class="carousel-item active">
               <picture>
-                <source type="image/webp" media="(min-width: 1000px)" srcset="./assets/images/slider/ryoji-iwata-desktop.webp">
-                <source type="image/webp" media="(min-width: 650px)" srcset="./assets/images/slider/ryoji-iwata-tablet.webp">
+                <source type="image/webp" media="(min-width: 1000px)" srcset="./assets/images/slider/ryoji-iwata-mobile.webp">
+                <source type="image/webp" media="(min-width: 650px)" srcset="./assets/images/slider/ryoji-iwata-mobile.webp">
                 <img
                 src="./assets/images/slider/ryoji-iwata-mobile.webp"
                 class="d-block w-100"
@@ -381,7 +376,7 @@
         </div>
       </div>
     </footer>
-    <script src="./assets/bootstrap/bootstrap.bundle.js" ></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js" ></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
